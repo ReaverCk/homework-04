@@ -1,0 +1,64 @@
+@import url(./normalize.css);           
+
+/*Border
+header, section, footer {
+outline: 1px solid #ccc;
+}
+Border end*/
+
+.wrapper {
+    width: 675px;
+    margin: 0 auto;
+}
+
+/*HEADER*/
+
+header {
+    height: 80px;
+    background: url(../images/header-bg.jpg) repeat-x;
+}
+
+header h1 {
+    margin: 0 35px;
+}
+
+.helvetica-thin {
+    font: 32px/80px HelveticaNeueLTPro-ThEx;
+    color: white;
+}
+
+.helvetica-bold {
+    font: 32px/80px HelveticaNeueLTPro-BdEx;
+    color: white;
+}
+
+/*NAV*/
+
+nav {
+    height: 77px;
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    font: 20px/77px Regular;
+}
+
+nav li:nth-child(n+2):before {
+    content: "";
+    background: url(../images/arrow.png);
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin: 0 26px;
+}
+
+/*WELCOME SECTION*/
+
+.welcome-section {
+    height: 190px;
+    background: #EEEEFB;
+}
