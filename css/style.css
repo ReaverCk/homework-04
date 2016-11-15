@@ -1,35 +1,43 @@
 @import url(./normalize.css);           
 
 /*Border
-header, section, footer {
+header, section, footer, div {
 outline: 1px solid #ccc;
 }
-Border end*/
+*/
 
 .wrapper {
     width: 675px;
     margin: 0 auto;
+    color: #093500;
 }
 
-/*HEADER*/
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
 
 header {
     height: 80px;
     background: url(../images/header-bg.jpg) repeat-x;
 }
 
-header h1 {
+header a{
     margin: 0 35px;
 }
 
-.helvetica-thin {
-    font: 32px/80px HelveticaNeueLTPro-ThEx;
+header a span.helvetica-thin, header a span.helvetica-bold{
+    line-height: 80px;
     color: white;
 }
 
+.helvetica-thin {
+    font: 32px HelveticaNeueLTPro-ThEx;
+}
+
 .helvetica-bold {
-    font: 32px/80px HelveticaNeueLTPro-BdEx;
-    color: white;
+    font: 32px HelveticaNeueLTPro-BdEx;
 }
 
 /*NAV*/
@@ -44,21 +52,137 @@ nav ul {
 
 nav li {
     display: inline-block;
-    font: 20px/77px Regular;
 }
 
-nav li:nth-child(n+2):before {
+nav li a {
+    font: 20px/77px Myriad Pro;
+    color: #093500;
+}
+
+nav li:nth-child(n+2)::before {
     content: "";
-    background: url(../images/arrow.png);
     width: 11px;
     height: 11px;
     display: inline-block;
-    margin: 0 26px;
+    margin: 0 24px;
+    background: url(../images/arrow.png);
 }
 
-/*WELCOME SECTION*/
+/* WELCOME SECTION */
 
 .welcome-section {
     height: 190px;
+    position: relative;
     background: #EEEEFB;
+}
+
+
+
+.welcome-section h1 {
+    position: absolute;
+    right: 85px;
+    top: 5px;
+}
+
+.welcome-img {
+    position: absolute;
+    left: 41px;
+    top: 15px;
+}
+
+.main {
+    width: 325px;
+    position: absolute;
+    right: 35px;
+    top: 80px;
+    color: #093500;
+}
+
+.main img {
+    margin: 15px 3px;
+}
+
+/*Content text*/
+
+.content h2 {
+    font: 20px Myriad Pro;
+    margin: 0 0 15px 0;
+}
+
+.content-header {
+    font: bold 11px Tahoma;
+    color: #80A60F;
+}
+
+.content p {
+    font: 10px Tahoma;
+    margin: 0;
+}
+
+.content img {
+    float: left;
+    margin-right: 17px;
+}
+
+/*End content*/
+
+/* Articles */
+
+.articles {
+    height: 260px;
+    position: relative;
+}
+
+.about-lab {
+    float: left;
+    width: 220px;
+    padding: 17px 25px;
+}
+
+.about-lab p{
+    margin-bottom: 15px;
+}
+
+.content-vertical {
+    float: right;
+    width: 400px;
+}
+
+.content-vertical article {
+    padding: 17px;
+}
+
+/* Vertical border*/
+
+.vertical-border {
+    width: 1px;
+    height: 205px;
+    position: absolute;
+    top: 30px;
+    left: 270px;
+    vertical-align: middle;
+    border-left: 1px solid #EEEEFB;
+}
+
+.horisontal-border {
+    height: 1px;
+    width: 375px;
+    position: absolute;
+    top: 127px;
+    right: 16px;
+    border-top: 1px solid #EEEEFB;
+}
+
+clear {
+    clear: both;
+}
+
+footer {
+    height: 65px;
+    padding: 0 25px;
+    border-top: 5px solid #EEEEFB;
+}
+
+footer p {
+    font: 10px/65px Tahoma;
 }
