@@ -84,7 +84,7 @@ nav li:nth-child(n+2)::before {
     top: 5px;
 }
 
-.welcome-img {
+.flask-img {
     position: absolute;
     left: 41px;
     top: 15px;
